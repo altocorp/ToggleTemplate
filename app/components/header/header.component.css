@@ -1,0 +1,101 @@
+.main-container {
+  background-color: hsl(234, 14%, 74%);
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 14vw 24vw 24vw 24vw 14vw;
+  grid-template-rows: 30vh 53vh 13vh;
+  row-gap: 2vh;
+  margin: 0;
+}
+
+.titlecenter {
+  display: grid;
+  align-content: center;
+  margin: 0;
+}
+
+.title {
+  display: grid;
+  align-content: center;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: hsl(232, 13%, 33%);
+}
+
+p {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: hsl(232, 13%, 33%);
+}
+
+
+.custom-switch {
+  padding-left: 0;
+  text-align: center;
+}
+
+.toggletext {
+  margin: 0;
+}
+
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: white;
+  border-color: hsl(236, 72%, 79%);
+  background-color: hsl(236, 72%, 79%);
+}
+
+
+
+.custom-control-input:focus~.custom-control-label::before {
+  box-shadow: none !important;
+}
+
+@media only screen and (max-height: 728px) {
+
+
+  .grid-container {
+    grid-template-rows: 21vh 70vh 5vh;
+  }
+
+  .toggletext {
+    margin: 0;
+  }
+
+  .titlecenter {
+    display: grid;
+    align-content: center;
+    margin: 0;
+  }
+
+  .title {
+    display: grid;
+    align-content: center;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    padding-bottom: 1vh;
+  }
+
+  p {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: hsl(232, 13%, 33%);
+  }
+
+}
